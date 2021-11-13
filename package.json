@@ -1,11 +1,17 @@
 {
     "name": "template-react",
+    "description": "Project template for a react based web app.",
     "version": "1.0.0",
     "main": "src/index.tsx",
     "license": "MIT",
+    "author": {
+        "name": "Kai Gartenschläger",
+        "url": "https://kaisnet.de"
+    },
     "scripts": {
-        "start": "webpack-dev-server --config webpack.dev.js",
-        "build": "webpack --config webpack.prod.js"
+        "start": "webpack serve --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js",
+        "format": "prettier --config .prettierrc 'src/**' --write"
     },
     "dependencies": {
         "@babel/core": "^7.16.0",
@@ -14,10 +20,15 @@
         "react-dom": "^17.0.2"
     },
     "devDependencies": {
+        "@types/react": "^17.0.34",
+        "@types/react-dom": "^17.0.11",
         "babel-loader": "^8.2.3",
         "css-loader": "^6.5.1",
         "html-webpack-plugin": "^5.5.0",
+        "prettier": "^2.4.1",
         "style-loader": "^3.3.1",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.4.4",
         "webpack": "^5.64.0",
         "webpack-cli": "^4.9.1",
         "webpack-dev-server": "^4.4.0",

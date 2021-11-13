@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     // enty points
-    entry: path.resolve('src', 'index.jsx'),
+    entry: path.resolve('src', 'index.tsx'),
 
     // the output directory for the compiled and bundled files
     output: {
@@ -15,9 +15,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|tsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader']
+                use: ['ts-loader']
             },
             {
                 test: /\.css$/,
@@ -29,7 +29,7 @@ module.exports = {
 
     // removes the need to add file extensions for import statements
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
 
     // plugins

@@ -1,5 +1,7 @@
 {
-    "presets": ["@babel/preset-react"],
-    "comments": false,
-    "compact": "auto"
+    "tabWidth": 4,
+    "useTabs": false,
+    "printWidth": 120,
+    "trailingComma": "none",
+    "singleQuote": true
 }
