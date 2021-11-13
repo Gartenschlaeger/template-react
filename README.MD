@@ -31,3 +31,16 @@ To format everything at once, just run `format`.
 ```sh
 yarn format
 ```
+
+# VSCode
+
+This project was created to work well with VSCode.
+
+## Required extensions
+
+-   https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+## Optional extensions
+
+-   https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer
+-   https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf
