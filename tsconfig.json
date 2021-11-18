@@ -4,7 +4,6 @@
         "sourceMap": true,
         "module": "CommonJS",
         "target": "ES2019",
-        "jsx": "react-jsxdev",
         "strict": true,
         "esModuleInterop": true
     }

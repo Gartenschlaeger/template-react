@@ -17,7 +17,16 @@ module.exports = {
             {
                 test: /\.(js|tsx)$/,
                 exclude: /node_modules/,
-                use: ['ts-loader']
+                use: [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            compilerOptions: {
+                                jsx: process.env.NODE_ENV === 'development' ? 'react-jsxdev' : 'react-jsx'
+                            }
+                        }
+                    }
+                ]
             },
             {
                 test: /\.css$/,
