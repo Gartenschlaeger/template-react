@@ -9,7 +9,7 @@
         "url": "https://kaisnet.de"
     },
     "scripts": {
-        "start": "webpack serve --config webpack.dev.js",
+        "start": "webpack serve --config webpack.dev.js --hot",
         "build": "webpack --config webpack.prod.js",
         "format": "prettier --config .prettierrc 'src/**' --write"
     },
