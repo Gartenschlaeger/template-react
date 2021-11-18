@@ -5,6 +5,7 @@
         "module": "CommonJS",
         "target": "ES2019",
         "strict": true,
+        "jsx": "react-jsx",
         "esModuleInterop": true
     }
 }
